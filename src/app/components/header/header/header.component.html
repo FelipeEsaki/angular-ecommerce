@@ -1,0 +1,20 @@
+<div class="header">
+    <h1>Ecommerce</h1>
+
+    <div class="header-menu">
+        <button mat-button [matMenuTriggerFor]="ver">Ver produtos</button>
+        <button>Gerenciar produtos</button>
+        
+        <mat-menu #ver="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="tecnologia">Tecnologia</button>
+            <button mat-menu-item>Roupas</button>
+            <button mat-menu-item>Livros</button>
+        </mat-menu>
+
+        <mat-menu #tecnologia="matMenu">
+            <button #headphone [routerLink]="['/products/tecnology/headphones']"  mat-menu-item>Headphones</button>
+            <button mat-menu-item>Smartphones</button>
+            <button mat-menu-item>Notebooks</button>
+        </mat-menu>
+    </div>
+</div>

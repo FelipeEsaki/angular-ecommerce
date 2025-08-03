@@ -1,0 +1,11 @@
+<div class="container">
+    @for (product of products; track product.id) {
+        <div (click)="oi()" class="container-item">
+            <img [src]="'http://localhost:3000' + product.imgUrl + '.jpg'" alt="">
+            <div class="container-item-description">
+                <span>{{ (product.price / 100) | currency:'BRL'}}</span>
+                <p>{{ product.title }}</p>
+            </div>
+        </div>
+    }
+</div>

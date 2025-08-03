@@ -1,0 +1,28 @@
+.header {
+    background: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(255, 255, 255, 0.54);
+    color: white;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    &-menu {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+
+      button {
+        font-size: 1.2rem;
+        color: white;        
+        border: none;
+        background: none;
+      }
+    }
+}
